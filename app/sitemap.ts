@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const pages = [
     "/",
     "/kalendar/",
+    "/posev/",
     "/kultury/",
     "/kalkulyator/",
     "/sosedstvo/",

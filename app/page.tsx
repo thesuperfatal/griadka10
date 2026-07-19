@@ -30,6 +30,12 @@ export default function HomePage() {
             Календарь месяца
           </Link>
           <Link
+            href="/posev/"
+            className="rounded-full border border-[var(--line)] bg-white px-5 py-2.5 text-sm font-medium hover:border-[var(--accent)]"
+          >
+            Сроки посева
+          </Link>
+          <Link
             href="/sosedstvo/"
             className="rounded-full border border-[var(--line)] bg-white px-5 py-2.5 text-sm font-medium hover:border-[var(--accent)]"
           >

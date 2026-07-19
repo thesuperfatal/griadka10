@@ -28,6 +28,9 @@ export default function SiteFooter() {
             <Link href="/kalendar/" className="hover:text-[var(--accent)]">
               Календарь
             </Link>
+            <Link href="/posev/" className="hover:text-[var(--accent)]">
+              Посев
+            </Link>
             <Link href="/kultury/" className="hover:text-[var(--accent)]">
               Культуры
             </Link>
