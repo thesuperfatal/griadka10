@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { CROPS } from "@/lib/crops";
 import { getMonthTask } from "@/lib/calendar";
+import { PROBLEMS } from "@/lib/problems";
 import { REGION_NOTE } from "@/lib/site";
 
 export default function HomePage() {
@@ -17,8 +18,8 @@ export default function HomePage() {
           Грядка10
         </h1>
         <p className="mt-4 max-w-xl text-lg leading-relaxed text-[var(--muted)]">
-          Календарь работ, карточки культур, калькулятор посадки и чек-лист сезона. Без
-          регистрации — отметки хранятся в браузере. {REGION_NOTE}.
+          Календарь работ, карточки культур, калькулятор посадки, памятки по проблемам и
+          чек-лист сезона. Без регистрации — отметки хранятся в браузере. {REGION_NOTE}.
         </p>
         <div className="mt-7 flex flex-wrap gap-3">
           <Link
@@ -26,6 +27,12 @@ export default function HomePage() {
             className="rounded-full bg-[var(--accent)] px-5 py-2.5 text-sm font-medium text-white hover:opacity-90"
           >
             Календарь месяца
+          </Link>
+          <Link
+            href="/problemy/"
+            className="rounded-full border border-[var(--line)] bg-white px-5 py-2.5 text-sm font-medium hover:border-[var(--accent)]"
+          >
+            Проблемы на грядке
           </Link>
           <Link
             href="/kalkulyator/"
@@ -63,6 +70,29 @@ export default function HomePage() {
         >
           Весь календарь →
         </Link>
+      </section>
+
+      <section className="mb-12">
+        <div className="mb-4 flex items-end justify-between gap-3">
+          <h2 className="font-[family-name:var(--font-display)] text-xl font-semibold">
+            Проблемы на грядке
+          </h2>
+          <Link href="/problemy/" className="text-sm text-[var(--accent)] hover:underline">
+            Все →
+          </Link>
+        </div>
+        <ul className="space-y-2">
+          {PROBLEMS.slice(0, 3).map((p) => (
+            <li key={p.slug}>
+              <Link
+                href={`/problemy/${p.slug}/`}
+                className="block rounded-2xl border border-[var(--line)] bg-white px-4 py-3 text-sm hover:border-[var(--accent)]"
+              >
+                <span className="font-medium">{p.title}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </section>
 
       <section>
