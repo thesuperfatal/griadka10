@@ -25,6 +25,9 @@ export default function SiteHeader() {
           <Link href="/kalkulyator/" className="hover:text-[var(--accent)]">
             Калькулятор
           </Link>
+          <Link href="/sosedstvo/" className="hover:text-[var(--accent)]">
+            Соседство
+          </Link>
           <Link href="/problemy/" className="hover:text-[var(--accent)]">
             Проблемы
           </Link>

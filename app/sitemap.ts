@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/kalendar/",
     "/kultury/",
     "/kalkulyator/",
+    "/sosedstvo/",
     "/problemy/",
     "/dnevnik/",
     "/checklist/",
