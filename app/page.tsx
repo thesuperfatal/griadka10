@@ -41,6 +41,12 @@ export default function HomePage() {
             Калькулятор посадки
           </Link>
           <Link
+            href="/dnevnik/"
+            className="rounded-full border border-[var(--line)] bg-white px-5 py-2.5 text-sm font-medium hover:border-[var(--accent)]"
+          >
+            Дневник работ
+          </Link>
+          <Link
             href="/checklist/"
             className="rounded-full border border-[var(--line)] bg-white px-5 py-2.5 text-sm font-medium hover:border-[var(--accent)]"
           >
