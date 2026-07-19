@@ -43,6 +43,9 @@ export default function SiteFooter() {
             <Link href="/checklist/" className="hover:text-[var(--accent)]">
               Чек-лист
             </Link>
+            <Link href="/faq/" className="hover:text-[var(--accent)]">
+              FAQ
+            </Link>
           </nav>
         </div>
       </div>

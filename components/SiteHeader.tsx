@@ -34,6 +34,9 @@ export default function SiteHeader() {
           <Link href="/checklist/" className="hover:text-[var(--accent)]">
             Чек-лист
           </Link>
+          <Link href="/faq/" className="hover:text-[var(--accent)]">
+            FAQ
+          </Link>
         </nav>
       </div>
     </header>
