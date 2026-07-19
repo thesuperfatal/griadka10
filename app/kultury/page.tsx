@@ -4,7 +4,7 @@ import { CROPS } from "@/lib/crops";
 
 export const metadata: Metadata = {
   title: "Культуры",
-  description: "Карточки: томат, огурец, картофель, клубника, яблоня — когда сажать и как.",
+  description: "Карточки культур: томат, огурец, морковь, капуста, чеснок и другие — когда сажать и как.",
 };
 
 export default function KulturyPage() {

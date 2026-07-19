@@ -139,7 +139,7 @@ export default function HomePage() {
 
       <section>
         <h2 className="mb-4 font-[family-name:var(--font-display)] text-xl font-semibold">
-          5 культур для старта
+          10 культур для старта
         </h2>
         <div className="grid gap-3">
           {CROPS.map((c) => (
