@@ -54,6 +54,12 @@ export default function HomePage() {
             Чек-лист сезона
           </Link>
           <Link
+            href="/backup/"
+            className="rounded-full border border-[var(--line)] bg-white px-5 py-2.5 text-sm font-medium hover:border-[var(--accent)]"
+          >
+            Резервная копия
+          </Link>
+          <Link
             href="/kultury/"
             className="rounded-full border border-[var(--line)] bg-white px-5 py-2.5 text-sm font-medium hover:border-[var(--accent)]"
           >

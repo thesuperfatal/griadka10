@@ -40,6 +40,9 @@ export default function SiteHeader() {
           <Link href="/faq/" className="hover:text-[var(--accent)]">
             FAQ
           </Link>
+          <Link href="/backup/" className="hover:text-[var(--accent)]">
+            Копия
+          </Link>
         </nav>
       </div>
     </header>

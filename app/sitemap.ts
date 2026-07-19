@@ -23,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/checklist/",
     "/faq/",
     "/articles/",
+    "/backup/",
   ];
 
   return [
