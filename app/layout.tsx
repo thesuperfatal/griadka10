@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
+import YandexMetrika from "@/components/YandexMetrika";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Грядка10: календарь работ по месяцам, карточки культур и чек-лист сезона. Для средней полосы, без регистрации.",
+    "Грядка10: календарь работ, культуры, калькулятор посадки, проблемы на грядке и дневник. Для средней полосы, без регистрации.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: SITE_NAME,
     title: `${SITE_NAME} — сад и огород по делу`,
-    description: "Календарь, культуры и чек-лист сезона. Прогресс в браузере.",
+    description: "Календарь, культуры, калькулятор и дневник. Прогресс в браузере.",
   },
 };
 
@@ -37,6 +38,7 @@ export default function RootLayout({
         />
       </head>
       <body className="flex min-h-full flex-col text-[var(--ink)]">
+        <YandexMetrika />
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />
