@@ -6,6 +6,9 @@ export interface Crop {
   spacing: string;
   neighbors: string;
   tips: string[];
+  /** Схема для калькулятора, см */
+  plantCmInRow: number;
+  plantCmBetweenRows: number;
 }
 
 export const CROPS: Crop[] = [
@@ -21,6 +24,8 @@ export const CROPS: Crop[] = [
       "Пасынкуйте индетерминантные сорта, оставляя 1–2 стебля.",
       "Полив под корень, по листьям — только утром в сухую погоду.",
     ],
+    plantCmInRow: 45,
+    plantCmBetweenRows: 65,
   },
   {
     slug: "ogurec",
@@ -34,6 +39,8 @@ export const CROPS: Crop[] = [
       "Мульча сохраняет влагу и снижает перепад температур.",
       "Собирайте зеленцы часто — так куст дольше плодоносит.",
     ],
+    plantCmInRow: 35,
+    plantCmBetweenRows: 55,
   },
   {
     slug: "kartofel",
@@ -47,6 +54,8 @@ export const CROPS: Crop[] = [
       "Окучивайте, когда ботва 15–20 см.",
       "Чередуйте участок: не сажайте картофель после картофеля.",
     ],
+    plantCmInRow: 32,
+    plantCmBetweenRows: 65,
   },
   {
     slug: "klubnika",
@@ -60,6 +69,8 @@ export const CROPS: Crop[] = [
       "Весной уберите старые листья и подкормите.",
       "Грядку обновляйте каждые 3–4 года.",
     ],
+    plantCmInRow: 28,
+    plantCmBetweenRows: 45,
   },
   {
     slug: "yablonya",
@@ -73,6 +84,8 @@ export const CROPS: Crop[] = [
       "Молодые деревья поливайте в засуху регулярно.",
       "Собирайте падалицу — меньше зимующих вредителей.",
     ],
+    plantCmInRow: 250,
+    plantCmBetweenRows: 300,
   },
 ];
 

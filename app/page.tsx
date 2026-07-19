@@ -17,8 +17,8 @@ export default function HomePage() {
           Грядка10
         </h1>
         <p className="mt-4 max-w-xl text-lg leading-relaxed text-[var(--muted)]">
-          Календарь работ, карточки культур и чек-лист сезона. Без регистрации —
-          отметки хранятся в браузере. {REGION_NOTE}.
+          Календарь работ, карточки культур, калькулятор посадки и чек-лист сезона. Без
+          регистрации — отметки хранятся в браузере. {REGION_NOTE}.
         </p>
         <div className="mt-7 flex flex-wrap gap-3">
           <Link
@@ -26,6 +26,12 @@ export default function HomePage() {
             className="rounded-full bg-[var(--accent)] px-5 py-2.5 text-sm font-medium text-white hover:opacity-90"
           >
             Календарь месяца
+          </Link>
+          <Link
+            href="/kalkulyator/"
+            className="rounded-full border border-[var(--line)] bg-white px-5 py-2.5 text-sm font-medium hover:border-[var(--accent)]"
+          >
+            Калькулятор посадки
           </Link>
           <Link
             href="/checklist/"
