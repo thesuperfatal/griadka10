@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ARTICLES } from "@/lib/articles";
 import { CROPS } from "@/lib/crops";
 import { getMonthTask } from "@/lib/calendar";
 import { PROBLEMS } from "@/lib/problems";
@@ -95,6 +96,29 @@ export default function HomePage() {
                 className="block rounded-2xl border border-[var(--line)] bg-white px-4 py-3 text-sm hover:border-[var(--accent)]"
               >
                 <span className="font-medium">{p.title}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="mb-12">
+        <div className="mb-4 flex items-end justify-between gap-3">
+          <h2 className="font-[family-name:var(--font-display)] text-xl font-semibold">
+            Статьи
+          </h2>
+          <Link href="/articles/" className="text-sm text-[var(--accent)] hover:underline">
+            Все →
+          </Link>
+        </div>
+        <ul className="space-y-2">
+          {ARTICLES.map((a) => (
+            <li key={a.slug}>
+              <Link
+                href={`/articles/${a.slug}/`}
+                className="block rounded-2xl border border-[var(--line)] bg-white px-4 py-3 text-sm hover:border-[var(--accent)]"
+              >
+                <span className="font-medium">{a.title}</span>
               </Link>
             </li>
           ))}
